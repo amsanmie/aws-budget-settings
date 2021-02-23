@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-2"
+}
+
 resource "aws_budgets_budget" "ec2" {
   name              = "budget-ec2-monthly"
   budget_type       = "COST"
